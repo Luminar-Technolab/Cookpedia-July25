@@ -1,0 +1,1072 @@
+        -------------------------------------------------
+                HTML - Hyper Text Markup Languauge
+        -------------------------------------------------
+
+        1. Markup Languauge : 
+        2. HTML - used to display contents in webpage
+        3. HTML documents - collection of HTML Elements
+            - HTML Elements : starting-tag,content,ending-tag
+                - starting tag : content in <tag-name>
+                - ending tag : 
+                ex: <tag-name>content</tag-name>
+            - Structure Of HTML
+                <html>
+                    <head>
+                        <title> title </title>
+                    </head>
+                    <body>
+                        contents to be displays in webpage
+                    </body>
+                </html>
+        4. Latest Version of HTML : HTML5
+        5. Basic Tags : used to display content in webpage
+            - Headings : h1-h6 tags
+            - paragraph - p tag
+            - Text formatting tags
+                - bold - b tag
+                - Italics - i tag / em tag
+                - highlight - mark tag
+                - strikeout content - s tag
+                - superlative content - sup tag
+                - subscript content - sub tag
+            - links - anchor / a tag
+                - href : hyperReference Text ()
+            - List
+                - Ordered List - ol tag, li tag
+                - Unordered list - ul tag, li tag
+            - Table : table tag
+                - thead tag : table head
+                - tbody tag : table body
+                - tr tag : row
+                - th tag / td tag : column
+            - img tag : image
+                - src : source file
+                - alt : alternative text
+            - video tag
+            - break : br tag
+            - Containers tag 
+                - div tag
+                - section tag
+                - article tag
+            - iframe tag - EMbeding content in a webpage
+            - form tag 
+                - input tag : user can input data
+                    - text, number, date, 
+                - Check box
+                - dropdown
+                - Radio Button
+                - Button
+        6. Tags can be classified according to their display in browser
+            - Block Elements : h1-h6 tag, p tag
+            - Inline Elements : a tag
+        7. Semantic Tags : describes its meaning  to both browser and developer
+             - header tag
+             - nav tag
+             - section tag
+             - article tag 
+             - aside tag
+             - footer tag
+
+        -------------------------------------------------
+                CSS - Cascading Style Sheet
+        -------------------------------------------------
+
+        1. used to give style to html elements
+        2. Ways to apply CSS in html Elements
+            - Inline CSS : use style attribute
+                - syntax : style="property:value;"
+            - Internal CSS : use style tag
+                - syntax : <style>
+                                selectors{
+                                    property:value;
+                                }
+                           </style>
+            - External CSS : use External css file, we have to link css file to html file
+                - syntax :  selectors{
+                                    property:value;
+                                }
+        3. Selectors : used to select html elements into css 
+            - tag name
+            - id 
+            - class name
+            - universal selector (*)
+            - CSS combinators : used multiple selectors to select html elements in css
+                - child selctor : space or >
+                - all sibling selector : ~
+                - immeadiate sibling selector : +
+            - Grouping selectors : select multiple html elements by seperating  by commas
+        4. Box Model : every html elements are wrapped in rectangular boxes in browser
+            - Margin : space between browser width and border
+            - Border
+            - Padding : space between content and border
+        5. CSS property
+            - Float 
+            - Position :
+                - Static
+                - fixed
+                - sticky
+                - relative
+                - absolute
+            - z-index : To manage order of overlapping elements
+            - Flex : used to display items in row & columns
+                - Flex Container
+                    - justify-content
+                    - align-items
+                    - flex-direction
+                    - flex-wrap
+                    - gap
+                - Flex items
+            - Grid : used to display items in row & columns
+            - Pseudo class : 
+        6. Media Queries : To build responsive site in css
+        
+
+        -------------------------------------------------
+                BOOTSTRAP : CSS FRAMEWORK
+        -------------------------------------------------
+        1. Build fast, responsive sites
+        2. Basic class
+
+        -------------------------------------------------
+                TAILWIND : CSS FRAMEWORK
+        -------------------------------------------------
+
+        -------------------------------------------------
+                        GIT & GITHUB
+        -------------------------------------------------
+
+        -------------------------------------------------
+                    FIGMA : DESIGNING TOOL
+        -------------------------------------------------
+
+        -------------------------------------------------
+            JAVASCRIPT : Dynamically Typed Languauge
+        -------------------------------------------------
+
+    1. console.log(content) : display content
+    2. Data types : typeof keyword to specify type of a data in js
+        - common data types in js
+            - Primiive data types
+                - number
+                - string
+                - boolean
+                - undefined
+            - NonPrimitive data types
+                - object
+        - To join multiple type of data
+            - using concantenation (+)
+            - using template literals (`${variable-name}`)
+    3. Variable : used to store data
+        - 3 types Variable
+            - using 'var' keyword
+            - using 'const' keyword
+            - using 'let' keyword
+        - Difference between variables
+        --------------------------------------------------------------------------
+            var                         const                   let
+        --------------------------------------------------------------------------
+        1. keyword used is var          const keyword           let keyword
+        2. value can be changed         value is constant       Value can be changed
+        3. Global scope                 Block scope             Block scope
+        4. Hoisted with value           Hoisted without value   Hoisted without value
+    4. Hoisting : Moving declaration to the top of the code     
+    5. Operators in JS
+        - Assignment Operators : =
+        - Arithmetic Operators : (+ - / x % **)
+        - Relational Operators : (> < >= <= == === !=)
+        - Logical Operators : && || !
+                AND             OR              NOT
+            ----------------------------------------------
+            T && T = T         T || T = T       !T = F
+            T && F = F         T || F = T       !F = T
+            F && T = F         F || T = T
+            F && F = F         F || F = F
+        - Increment / Decrement Operators : (++ --)
+        - Shorthand Operators (+= -=)
+        - Ternary Operators (?:) :syntax - condition?true Statement:false Statement 
+        - Truthy Operators (&&) : syntax - condition&&true Statement
+        - Spread Operators (...): used to join iterating variables into a single iterating variable
+        - Rest Operators (...) : used to get rest of the arguments into a single array
+    6. Conditional Statement : taking decision based on condition 
+        - if  Statement  : if(condition){ true Statement }
+        - if - else Statement : if(condition){ true Statement }else{ false Statement }
+        - else-if Ladder
+        - Switch 
+    7. Looping Statement : repeat same steps of codes
+        - while loop : syntax -
+            - initialise a variable
+            - while(condition using initialised variable){
+                step needed to repeated when while condition become true
+                change variable used in condition
+              }
+        - for loop : syntax -
+        for(initialise a variable;condition using initialised variable;change variable used in condition){
+            step needed to repeated when for loop condition become true
+        }
+        - Nested Loop : A loop inside another loop, when inner loop complete then only outer loop completed
+            outer-loop{
+                inner-loop{
+                    Statements
+                }
+            }
+        - break Statement : to exit from loop
+        - continue  Statement : to skip loop
+    8. Function : used to perform specific task , all Function are hoisted
+        - Function Definition : are used to define task tobe performed
+            - syntax : 
+            function function-name(parameters...){
+                steps to resolve the task
+                retun Statement 
+            }
+        - Function call : used to execute / run function - syntax: function-name(arguments...)
+        - Types of function :
+            - Predefined function : ex: console.log()
+            - Arrow function : const function-name = (parameters...)=>{steps to resolve the task}
+            - Callback function : function Definition inside a function call
+                 syntax : function-name(()=>{
+                function Definition
+            })
+            - Anonymous function : nameless function are self excuting
+            - Recurssive Function : A Function is called inside its own Definition
+                const function-name = (parameters...)=>{
+                    steps to resolve the task
+                    function-name()
+                    }
+            - Nested function : Defining a function inside another function Definition, 
+            - Closure property : In Nested function, child function can access both global and its parent variable
+            - Currying Function : spliting the function of multiple argument as single argument function
+    9. Array : used to store multiple value in a single variable
+        - index : To access items in an array , array-name[index]
+        - length : used to get total count of items in array
+        - first item will be in index : 0
+        - last item will be in index : array-name.length-1
+        - type of array : object
+        - Array Methods : array-name.method()
+            - push() : insert data at the end of an array
+            - unshift() : insert data at the starting of an array
+            - pop() : remove item from end of an array
+            - shift() : remove item from start of array
+            - sort(callback) : used to arrange items in ascending / descending order in original array
+            - toSorted(callback): used to arrange items in ascending / descending order in to a new array without changing original array
+            - forEach(callback) : similar to for of loop
+            - filter(callback) : Returns the array of elements  that meet the condition specified in a callback function.
+            - find(callback) : Returns only single elements of the given array that meet the condition specified in a callback function.
+            - reduce(callback) : Returns accumulated result (smallest/ largest / total) from an array after applying reduce function 
+            - reduceRight(callback) : Returns accumulated result first (smallest/ largest / total) from an array after applying reduce function 
+            - map(callback) : Returns new array with items after applying mapping function to the original array
+            - some(callback) : Returns boolean based on the condition given in the call back function, it retun true when any of the array item satisfy the condition
+            - every(callback) : Returns boolean based on the condition given in the call back function, it retun true when all array item satisfy the condition
+            - flat(depth) : reduce to array dimensional according to the depth value. if depth == Infinity then we get one dimensional array
+            - includes(item) : return boolean if the item is present in array or not
+            - indexOf(item) : retun index of the given item, if item is not found the it return -1
+            - splice(index,deletecount) : used to remove/relace items from an existing array
+            - concat() : used to join 2 arrays
+            - join() : used to retun array item as a single string
+    10. String : Collection of characters
+        - substring() : to get part of a string
+        - slice() : to get part of string
+        - toUpperCase() : 
+        - toLowerCase()
+        - startsWith()
+        - endsWith()
+        - trim()
+        - includes()
+        - split()
+    11. Object : Used to stores multiple data as key-value pairs inorder to understand the data properly,  
+        - Data stored {key:value}
+        - To access values from object
+            - Bracket Notation : object-name['key']
+            - Dot Notation : object-name.key
+        - To check a key is in object :
+            - use 'in' key word : key in object-name
+            - hasOwnProperty(key) : object-name.hasOwnProperty(key)
+        - To insert data in object
+            - object-name['key'] = value
+            - object-name.key = value
+        - To update value in object
+            object-name[key] = updated value
+        - To get all Keys from object : Object.key(object-name)
+        - To get all Values from object : Object.values(object-name)
+    12. Object Oriented Programming (OOPs)
+        - Basic concepts
+            - Object : Real world entity
+                - creation syntax : new class-name() 
+                - object is used to access class properties / methods outside a class
+            - Class : Blue print of object
+                -  syntax : class class-name{
+                    class property
+                    class method : function inside a class
+                    constructor(){
+
+                    }
+                }
+                - constructor method : used to initialise class properties, to call constructor we have to create object
+            - Reference : this keyword
+        - Features
+            - Inheritance : derive properties and characteristics from another
+                - class based Inheritance : using 'extends' keyword
+                - Prototype Inheritance : using '__proto__' keyword
+            - Polymorphism : means having many forms
+            - Encapsulation : wrapping up of data under a single unit.
+            - Abstraction : it refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
+    13. Errors / Exceptions Handling in JAVASCRIPT
+        - try-catch-finally block Statements
+            - try{
+                code may generate runtime error, should be given
+            }catch(error){
+                catch block executes only when try block has run time error
+                steps to resolving error should given here
+            }finally{
+                code should be execute both try & catch cases
+            }
+
+    -----------------------------
+            JS In Front end
+    -----------------------------
+
+    1. Used to apply behavior changes in HTML elements
+    2. Ways to apply JS in html Elements
+        - Internal JS : using script tag for writing js code inside html documents
+        - External JS : js code will be in External js file and it link to the html documents using script tag along with its src attribute
+    3. DOM : Document Object Model
+        - Tree representation of html documents into browser
+        - Tree means it has only a single parent node and children which connected to node
+    4. Accessing HTML elements into JAVASCRIPT
+        - using 'document' object of js
+        - Ways to access html elements
+            - using tag name : document.getElementsByTagName('tag')
+            - using id : document.getElementById('id') / id
+            - using class name: document.getElementsByClassName('class')
+            - document.querySelector('#id')
+            - document.querySelectorAll('tag/#id/.class')
+    5. Events : are occured in HTML elements and are triggered by user action
+        - Mouse realated Events : click, hover,drag...
+        - Keyboard realated Events : key press down ...
+        - Touch realated Events
+    6. Handling Events using js : create a function to solve the events in js , call the function in html elements when that events occurs , event=function-call
+        - <button onclick="function-name()" >Click</bitton>
+    7. Access/Update HTML elements contents
+        - innerHTML / innerText : tag-selector.innerHTML = update value
+    8. Store data permanently in browser : data stored as key-value pair, here both key and value must be string
+        - Local Storage : data wll store permanently
+        - Session Storage : data wll store permanently until we close the tab
+        - Cookie Storage : 
+        - Methods
+            - add data : setItem(key,value)
+            - get data : getItem(key)
+            - remove data : removeItem(key)
+            - clear all data : clear()
+    9. Working of JS in browser
+        - JS Engine : It handle js execution, convert js code to code that understood by browser Engine
+            - Two parts
+                - Call Stack : Used to track currently executing function, Make sure each of the function execution completion before starting another, only one call stack is available in js engine so it is known as "Single Threaded Programming Languauge"
+                    - Two types of functions can be handled by call stack
+                        - Synchronous function : function executes without any delay
+                        - Asynchronous function : function execute with delay (Browser API , Web API...)
+                            - Browser API ( settimeout, onclick etc...) , stored in Macro Task Queue
+                            - Web API (communication using network ), stored in Micro Task Queue , is priority queue
+                            - Event Loop : Manages flow of your code. manages  Asynchronous operations and user interaction without blocking main thread
+                            - Macro Task queue : hold function like settimeout, onclick etc.. ., event loop will handle first in first out 
+                            - Micro Task Queue : hold function like api , it is priority queue , event loop process all microtasks after task from main. 
+                - Heap : storage for variable and objects used by code
+            - Working JS : JS engine parse code to machine codes, push functions to call stack, they execute one at a time. when encounter Asynchronous functions , it will add callback to task queue, when stack become empty even loop first process micro task queue. event toop ensure code runs smoothly. 
+    10. Handling Asynchronous functions in JS
+        - Callback functions : it add delay to excute function
+            - Call Back hell : Nesting of callback leads to callback hell, it wont complete the task 
+        - Promise : used to handle Asynchronous function and  retun any of the 2 states, resolved state or reject state
+            - Resolved state means it handle/ complete the function, to get resolved state in js from Promise use  'then' method. callback of 'then' will give response of resolved state
+            - Reject state means failed the task , to get data from reject state use 'catch' method callback
+        - async - await keyword : using them makes Asynchronous function Handling without callbacks
+            - async can be used along with functions, await can be used inside async function
+            - await is used to wait for the completion of Asynchronous function execution
+    11. API : Appliction Programming Interface
+        - Is medium used to make communication between Different applications in internet
+        - Based on communication between apps we can classify api Architectures
+            - SOAP API (Client-Server communication), Request HTTP, shared data in XML format
+            - REST API (Client-Server communication) - Request HTTP, shared data in any format
+            - SOCKET IO (Messaging app)
+            - GRAPH QL
+    12. HTTP : HyperText Transfer Protocol 
+        - enabling the transfer of data between a client and a server, Data such as text, images, and other multimedia files can transfered
+        - Methods of HTTP Request
+            - GET : Used to retrieve data from a specified resource
+            - POST : Used to submit/create data to be processed by a specified resource. 
+            - PUT : Used to update completely a resource on the server.
+            - PATCH : Used to update partially a resource on the server.
+            - DELETE : Used to remove a specified resource from the server.
+        - Request : 2 parts
+            - Header part : used to define type data in body , keep secret data
+            - Body part : used to hold data to be shared with another app
+        - Types of data can be shared via http body
+            - XML : Extensible Markup Languauge
+            - JSON : JAVASCRIPT Object Notation , syntax : {"key":value}
+                - To convert json to js : JSON.parse(json-data)
+                - To convert js code to json : JSON.stringify(js-data)
+            - Text
+            - Binary
+        - HTTP Response Status code
+            - 1xx : information
+            - 2xx : successfully completed
+            - 3xx : redirection 
+            - 4xx : failed due to client error
+            - 5xx : failed due to server error
+    13. URL : Uniform Resource Locator
+        - every site in internet has unique URL
+        - ex: https://jsonplaceholder.typicode.com/posts/1
+        - URI : Uniform Resource Indentifier : ex: posts
+        - Parameters : are dynamically changed values in a url
+    14. API Call in JAVASCRIPT
+        - Using 'XMLHttpRequest'/ 'XHR' Class api call - AJAX Call
+            - AJAX : Asynchronous JAVASCRIPT XML
+            - Working of API call using XMLHttpRequest class
+                1. Create Object for XMLHttpRequest class
+                2. Initialise Request using 'open' method of 'XMLHttpRequest' class
+                3. Send Request using 'send' method pf XMLHttpRequest class
+                - to get response from XMLHttpRequest , 
+                    - 'readyState' property defines response is ready or not, it values are vary from 1 to 4, when it value become 4 then response is ready, 
+                    - 'onreadystatechange'  property define 'readyState' is changed or not using function 
+                    - to view response use 'responseText' based on 'status'
+        - Using 'fetch' method  
+            - it works based on JAVASCRIPT 'Promise'
+            - after making api call using 'fetch' it response comes with lot of information other than api result inorder to parse to get the reponse, use json() method which again returns a promise 
+            - to get api result using fetch we have to use 2 then methods 
+            - syntax : fetch(url,Request Initialisation)
+                - Request Initialisation : optional
+                it syntax is { method:"HTTP REQUEST", body:request body }
+
+
+    -------------------------------------------------
+           REACT - ADVANCED FRONT END TECHNOLOGY
+    -------------------------------------------------
+
+    1. front-end JavaScript library.
+    2. is a tool for building UI components.
+    3. Features of REACT
+        - Virtual DOM : React creates a VIRTUAL DOM in memory. Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+        - UI Components : Components are resuable pieces of codes.
+        - JSX : JavaScript XML - JS extension for writing HTML codes, used to display contents in browser
+            - JSX consists of JSX elements
+            - Rules of JSX
+                - Every jsx elements must be inside a single tag. That tag can be container tags (div,section,article...) or react fragments, nameless tag are react fragments ( <></> )
+                - All Jsx tag must have closing tag : 
+                    - tag with contents : <tag>content</tag>
+                    - tag without contents :<tag></tag> or  self closing tags ( <tag/> )
+                - All attributes and its value must be in camel case (fontSize)
+                - in JSX, attribute like class is 'className' and instead of for use 'htmlFor'
+                - Use js code directly in jsx, provide js code inside {js code}
+        - Babel : used to convert jsx to html
+    4. React project creation : using vite 
+        - vite react project creation : npm create vite@latest project-name -- --template react 
+        - To run react app using vite : npm run dev, generally we can view output in localhost:5173
+        - Files & Folder Structure of react app using vite
+            - vite.config.js : vite configuaration file for react app
+            - README.md : project documentation file
+            - package.json :  configuaration file for project 
+            - package-lock.json : details version of packages installed in project
+            - .gitignore : used to mention files or folders to be ignored in git 
+            - eslint.config.js : configuaration file for js code quality check 
+            - index.html : entry point of app 
+            - node_modules folder : holding copies of packages installed in the project, so that project can use package from node_modules instead of internet, inorder  to create node_modules in a project using command : npm install
+            - public folder : used to hold items that can accessed from any where in the project 
+            - src folder : is the folder where react app logic is given
+                - main.jsx : used to display react app in browser
+                    - createRoot() : create a root to display React components inside a browser DOM node.
+                - index.css : global css file
+                - App.jsx : is a component file, which is the root component of react app
+                - App.css : css file for App.jsx
+                - asset folder : used to hold image, video... of a project
+    5. React app is a collection of components and are arranged in tree Structure, main root of react app is 'App' component
+    6. React component : Set of reusable code for creating UI of app
+        - Life cycle Methods of React component
+            - 1. Mounting Phase : Putting jsx into DOM
+                - constructor()
+                - getDerivedStateFromProps()
+                - render()
+                - componentDidMount()
+            - 2. Updating Phase : when component get updated
+                - getDerivedStateFromProps()
+                - shouldComponentUpdate()
+                - render()
+                - getShapshotBeforeUpdate()
+                - componentDidUpdate()
+            - 3. Unmounting phase : removing from DOM
+                - componentWillUnmount()
+        - To create component : create a jsx/js file with file name startwith 'capital letter'
+        - Can be of 2 types
+            - Functional based / stateless component : uses js pure function and it return jsx code
+                - A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed.
+            - Class based / statefull component : uses js class, it inherit react component 
+        - Difference between Class & function based component
+                Class Based component                       Functional based component
+            ----------------------------------------------------------------------------------
+            1. using class to create render method to       1. Using js pure functions, it retun jsx
+            retun jsx
+            2. Statefull component                          2. Stateless component
+            3. Hooks not needed                             3. Hooks needed
+            4. Need constructor                             4. No need constructor
+            5. Lifecycle method are available               5. LC methods not available
+    7. Styling React component
+        - Using Inline CSS : using style attribute. and style as js object
+            - syntax : style={{property:value,...}}
+        - Using External CSS : add External css file with jsx file using import Statement
+        - Using CSS module file :  file with file extension as .module.css is known as css module file
+    8. Handling list of items in JSX : use 'map' function to get each item from an array in jsx, use parenthesis for callback body, 'key' attribute used to uniquely identify elements in list
+    9. Conditional Rendering : Based on based on component can control visibility of jsx elements, use js Conditional Statements / ternary Operators in JSX
+    10. Event Handling in React : event={function-call}
+        - function call with no arguments : event={function-name}
+        - function call with arguments : event={()=>function-name(arguments)}
+        - function call with argument as event : event={(event)=>function-name(event)}
+    11. React State : is a variable used to store data, when state changes DOM also will changed
+        - In class based component : use state property , can only assign object. To update state value use setState({key:updated-value})
+    12. React Hooks : Is function for provide react component features(life cycle method & state) to functional component
+        - Rules for using Hooks in functional component
+            1. Import hook
+            2. used in top level of component
+            3. Hooks cannot be Conditional
+        - Common Predefined/built in Hooks
+            - useState(initial-value) : used to create state in functional component, it can store any type of data, useState hooks returns an array , its 1st argument will give you the state, 2nd argument is a function-name used to update the state
+            - useRef() : return object with one key as 'current', use ref attribute to jex elements, current key has that jsx element, inorder to prevent unwanted rending
+            - useEffect(callback,dependecy) : used to provide side effects to component
+                - callback : is a function used to define side effects
+                - dependency : it decide when side efects should be applied in component
+                    - no argument : side effects will apply all time in component
+                    - [] / empty array : side effects will apply only at the creation/loading of component in browser
+                    - [props/state/variable] : side effects will apply not only at the component creation but also changes of the array items(props,state/variable)
+            - useNavigate() : return a function which capable of redirecting one one page to another, to use call the retun function and pass argument as url
+            - useParams() : return an object with dynamic values of component url
+        - Custom Hooks : Its should a js file and it filename is starts with 'use' keyword. Hook is a function , it must return data
+    13. Props : used to share data from parent to child component, props is the argument of functional component, props is an object where its key is from its child selector property
+    14. Routing in React : React- Router Dom 
+        - Setting path/url for component
+        - use react-router-dom package : npm i react-router-dom
+        - Steps for seeting url/path for a component
+            1. Entire react app must be render inside 'BrowserRouter' component
+            2. Components used to setup path should be inside 'Routes' component
+            3. to set up path/url for a component use 'Route' component and attribute like 'element' used to add component selector and 'path' used to ad 
+        - useNavigate() hook is used to navigate from one page to another
+        - useParams() hooks used to get dynamic values from url as an object
+    15. Form Handling in React : store data inputed via form in component
+        - Controlled Components : user input data will be stored in component state, using 'useState' hook to store data
+        - Uncontrolled component : user input data will be fetched from real dom, here tag can directly acccess via 'useRef' hook
+    16. Handling API In react
+        - fetch method
+        - Axios library : Promise based HTTP client for the browser and node.js
+            - Install:  npm install axios
+    17. Data shairing React
+        - State lifting : data shairing using props, Here state will lift to its common parent so that its child can access data via pros
+        - redux : used to ahare data between components using global storage
+        - Context API : used to share data between components without props drilling
+
+            CONTEXT API
+        ------------------
+        1. Context API is React’s built-in way to share data globally across components without passing props manually at every level
+        2. Basic Flow (3 Steps)
+            - Create Context : use createContext() method
+            - Provide Context : using 'Provide' component of createContext(), it uses 'value' to provide data
+            - Consume/access Context : use 'useContext' hook
+        3. Context vs Redux (Quick Take)
+            - Context API → small to medium apps, simple global state
+            - Redux / Zustand → large apps, complex state, heavy updates
+
+
+            JSON SERVER
+        -------------------
+        1. Create server folder
+        2. create package.json file server folder, using command : npm init -y
+        3. create a  json file to store data
+        4. Install json-server package to run json file
+        5. Run server using command : npx json-server json-file-name
+
+
+            PROJECT CREATION USING REACT
+        ----------------------------------------
+
+        1. Using vite create react project : npm create vite@latest project-name -- --template react
+        2. Remove unwanted codes from project (clear css files, app component file unwanted data)
+        3. Install or link libraries used to create react project (link bootstrap , fonts, install material ui,react-icons, react-router-dom,)
+        4. Create page folder inside src folder, create components for pages inside folder
+        5. Create components folder inside src folder, component for part of pages
+        6. Set up path for component in pages folder 
+        7. Start design pages
+    
+    18. REDUX : State management tool to avoid props drilling
+
+
+                        BACKEND TECHNOLOGY
+                    --------------------------
+
+                DATABASE
+            ---------------
+
+    1. A database is a structured collection of data that is stored, organized, and managed so it can be easily accessed, updated, and retrieved.
+    2. We use a database to:
+        - Store large amounts of information
+        - Retrieve information quickly
+        - Update or delete data easily
+        - Secure and protect data
+        - Avoid duplicate information
+    3. Different Types of Databases
+        | Type                 | Example Use                       | Example Systems               |
+        | -------------------- | --------------------------------- | ----------------------------- |
+        | **Relational (SQL)** | Data in tables with relationships | MySQL, PostgreSQL, SQL Server |
+        | **NoSQL**            | Flexible, unstructured data       | MongoDB, Firebase             |
+        | **Cloud Databases**  | Stored online                     | AWS RDS, Google Firestore     |
+    4. Database Management System (DBMS) : software used to interact with a database,
+    5. A Relational Database (RDBMS) is a type of database that stores data in a structured format using tables (rows and columns). The data is organized and connected using relationships, making it easier to query, update, and manage.
+        -  Key Features of Relational Databases
+            | Feature               | Description                                               |
+            | --------------------- | --------------------------------------------------------- |
+            | **Tables**            | Data is stored in rows and columns (like Excel).          |
+            | **Primary Key**       | A unique identifier for each record (e.g., user_id).      |
+            | **Foreign Key**       | Links one table to another (relationship).                |
+            | **Structured Schema** | Data must follow a defined structure.                     |
+            | **SQL Support**       | Uses Structured Query Language (SQL) for data operations. |
+
+
+                    MongoDB
+            ---------------------------
+
+    1. Is a NoSQL, document-oriented database used for storing large volumes of unstructured or semi-structured data
+    2. Instead of storing records in tables like SQL, MongoDB stores data in JSON-like documents (BSON).
+    3. Key Features of MongoDB
+        | Feature                    | Description                                            |
+        | -------------------------- | ------------------------------------------------------ |
+        | **Document-based storage** | Data is stored in JSON-style documents.                |
+        | **Schema-less**            | No fixed structure; fields can vary for each document. |
+        | **Scalable**               | Designed for horizontal scaling and high availability. |
+        | **Fast performance**       | Optimized for high read/write operations.              |
+        | **Built-in replication**   | Ensures data safety with replica sets.                 |
+    4. MongoDB Structure
+        - Database
+            - Collection (like a table)
+                - Document (like a row)
+                    - Field (like a column)
+    5. _id is a unique identifier field that is automatically added to every document in a collection. It acts like a Primary Key in relational databases.
+        - Default type: ObjectId
+    6. MongoDB Commands (Basic CRUD)
+        - Create / Insert Data : 
+            - insertOne({key:value}) : used to add single document
+            - insertMany([{key:vale},{key:value}]) : used to add multiple document at a time
+        - Read / Query Data :
+            - find() : used to get all documents from a collection
+            - find(query) : used to get all document statisfy the query
+            - findOne(query) : used to get a single document that statisfy the query
+            - findById({_id:value}) : used to get a single document for the given _id
+        - Update Data :
+            - updateOne(update-document-id,update query) : used to edit one document
+            - updateMany() : used to edit multiple documents
+        - Delete Data :
+            - deleteOne(update-document-id,update query) : used to remove one document
+            - deleteMany() : used to remove multiple documents
+        - sort()
+        - count()
+        - limit()
+    7. MongoDB Query Operators - Operators that can be used to compare and reference document fields. It starts with $ symbol
+            - Comparison : {field-name:{query-Operator:value}}
+                - $eq: Values are equal
+                - $ne: Values are not equal
+                - $gt: Value is greater than another value
+                - $gte: Value is greater than or equal to another value
+                - $lt: Value is less than another value
+                - $lte: Value is less than or equal to another value
+                - $in: Value is matched within an array
+            - Logical : {   logical-operator: [     { condition1 },     { condition2 },     ...  ]}
+                - $and: Returns documents where both queries match
+                - $or: Returns documents where either query matches
+                - $nor: Returns documents where both queries fail to match
+                - $not: Returns documents where the query does not match
+            - ELement Operators:
+                - $exists : used to check the field existing
+            - Evaluation : { fieldName: { evaluation-operator: /pattern/ or "pattern" } }
+                - $regex: Allows the use of regular expressions when evaluating field values
+                - $text: Performs a text search
+                - $where: Uses a JavaScript expression to match documents
+    8. MongoDB Update Operators :
+        - Fields : {field-query:{fieldName:value}}
+            - $currentDate: Sets the field value to the current date
+            - $inc: Increments the field value
+            - $rename: Renames the field
+            - $set: Sets the value of a field
+            - $unset: Removes the field from the document
+        - Array
+            - $addToSet: Adds distinct elements to an array
+            - $pop: Removes the first or last element of an array
+            - $pull: Removes all elements from an array that match the query
+            - $push: Adds an element to an array
+    9. Aggregation : MongoDB Aggregation is a powerful feature used to process and transform data from collections
+        - $match : aggregation stage used to filter documents
+            - syntax : db.collection.aggregate([
+                    { $match: { field: value } }
+                    ]);
+        - $group : group documents by a specific field and perform operations (sum,avg,min,max)
+        - $sort
+        - $limit
+        - $lookup: used to perform a JOIN-like operation between two collections.
+            - syntax : db.collection.aggregate([
+                    {
+                        $lookup: {
+                        from: "otherCollection",
+                        localField: "fieldInCurrentCollection",
+                        foreignField: "matchingFieldInOtherCollection",
+                        as: "outputArrayField"
+                        }
+                    }
+                    ]);
+    10. Indexing : improves query performance by allowing the database to quickly locate data without scanning the entire collection (called a collection scan). It used in find,sort,join,group    
+        - Creating an Index : createIndex()
+
+                MongoDB ATLAS
+            ----------------------
+
+    1. MongoDB Atlas is a cloud database service where you can store and access MongoDB online instead of running it locally.
+    2. Login Atlas using ggogle account, create db
+        cluster ---> Browse Collections --> create database
+    3. Add/Update Database user / network access
+    4. To connect db using connection string
+        clusters --> connect ---> Coonction application Using Drivers ---> copy connection string
+
+
+                BACKEND SERVER
+            ----------------------
+
+    1. A backend server in a web application is the hidden part of the app that runs on a server and handles things like:
+            ✔ Business logic
+            ✔ Database operations
+            ✔ Authentication & authorization (login/register)
+            ✔ Security
+            ✔ File handling (upload/download)
+            ✔ API responses (data for frontend apps)
+    2. How It Works (Simple Flow)
+        User Request → Frontend (Browser) → Backend Server → Database
+            ↓                                           ↑
+        Response ← API (JSON/XML) ← Backend Logic ← Stored Data
+    3. Backend Technology Stack Examples
+        | Layer              | Options                                           |
+        | ------------------ | ------------------------------------------------- |
+        | **Languages**      | Node.js, Python, Java, PHP, C#, Go                |
+        | **Frameworks**     | Express.js, Django, Spring Boot, Laravel, ASP.NET |
+        | **Databases**      | MongoDB, MySQL, PostgreSQL, Firebase, Redis       |
+        | **Authentication** | JWT, OAuth2, Passport.js, Firebase Auth           |
+        | **Hosting**        | AWS, Azure, Google Cloud, Vercel, Render, Heroku  |
+    4. A backend server is the engine of a web application that powers all the logic, data processing, and secure communication behind the scenes. Without it, the frontend would only display static content—no login, no database, no transactions.
+
+                    NODE JS
+            ----------------------
+
+    1. Node.js is a JavaScript runtime environment that allows you to run JavaScript outside the browser — mainly on the backend. 
+    2. It uses the V8 engine (the same engine Chrome uses), making it fast, scalable, and efficient.
+        - JIT (Just In Time) compiler : It convert JavaScript into optimised machine code without interpret
+    3. Why Node.js?
+        - Fast performance (non-blocking & asynchronous)
+        - Uses JavaScript for both frontend and backend
+        - Huge npm ecosystem (millions of packages)
+        - Ideal for real-time apps (chat apps, notifications, games)
+    4. How Node.js Works : Node.js uses an event-driven, single-threaded model, but handles multiple operations concurrently using:
+        - Event Loop    
+        - Asynchronous (non-blocking) I/O
+    5. Node.js Architecture (Simple)
+        Client → Node.js Server → Event Loop → Async Call → Callback → Response
+    6. Node.js Modules
+        - Node js uses CommonJSModule, to import data it has to use, 'require('package-name /file path')' method, to export data by Default in node uses 'module.exports' , otherwise uses 'exports'
+        - In built Modules
+            - fs → File system
+            - http → Create servers
+            - path → File paths
+            - os → System info
+            - events → Event emitter
+    7. Error / Exception Handling in Nodejs
+        - Using Try - Catch block with async-await
+        - Error-First Callbacks : callback with first argument as error
+        - Using 'UncaughtException' uses global error handling for uncaught error
+    8. Global objects : is an object that acts like the global scope,
+        - Anything added to the global object becomes available everywhere in the application without importing it.
+        - ex:
+            - process : Info about runtime (CPU, memory, env variables)
+    9. Environmental Variable : used to store condefidential data of project, all env variable should be in .env file
+    10. CORS (Cross Origin Resource Shairing): security mechanism that allows or restricts web applications running on one domain to interact with a server from another domain.
+    
+
+
+            Express.js
+        ------------------
+
+    1. Express.js is a fast, minimal, flexible web framework for Node.js used to build APIs and web applications.
+    2. used to:
+        - Build APIs
+        - Create servers
+        - Serve frontend files (HTML, CSS, JS)
+        - Handle HTTP requests (GET, POST, PUT, DELETE)
+    3. Steps for creating Express server
+        - Create a folder for server
+        - Create package.json / project configuration file , using command : npm init -y
+        - Update package.json file "script" with start command, "start":"node index.js"
+        - Create .env file, used to store environmental variables of project
+        - Install all external packages for express server creation, package: express,cors,dotenv,mongoose,jsonwebtoken
+        - Create .gitignore file and add files & folders to be avoided when we add into git
+        - Create index.js file for server creation
+            - import express,dotenv,cors 
+            - create server using express
+            - enable cors in express server
+            - add json parser to server
+            - use router in server app
+            - create a port where server should listen in web
+            - make sure server listen in that port
+            - resolve http get request to http://localhost:3000/ using server
+                - server.httpRequest(url,request handle function)
+            
+    4. Express.js MVC architecture step by step.
+        - What is MVC?
+            | Layer          | Role                                              |
+            | -------------- | ------------------------------------------------- |
+            | **Model**      | Handles database and data logic                   |
+            | **View**       | Frontend (HTML, EJS, etc.) — optional in REST API |
+            | **Controller** | Handles request and sends response                |
+        - server folder MVC structure
+            - model folder : used to communicate between database and server
+            - Controller folder : used to define logic to resolve each API request
+            - Routes folder: used to set up path for client api request
+            - config folder : used to define connection between db and server app
+            - index.js file
+            - .env file
+            - .gitignore file
+            - node_modules folder
+            - package.json
+            - package-lock.json
+        - server app workflow
+            client request --> URL defined in Routes ---> Controller <--> Model
+                                                                |
+                                   client               <--- Response    
+    5. Set up Path for api request outside the server app file
+        - use express Router class 
+            - create Router object
+            - using router object we can define path for each request
+                router-object.httpRequest(path,controller-function)
+            - export router
+    6. Create controller folder for defining api request, 
+        - import model 
+    7. Create Database Conntection
+        - add your MongoDB connection string .env file
+        - create a config folder in server folder
+            - import mongoose
+            - get connection string from procee.env
+            - connect node with db using mongoose.connect() 
+            - import connection file in index.js
+    8. Create model folder for communicate between controller and database
+        - Inside folder create model js file for each collection in MongoDB
+        - create schema for the model & export model
+    9. Create middleware folder
+        - create js file for token authorisation using JWT
+        - create a function with 3 arguments ( req,res,next) & export
+    10. Create a folder for storing uploading file from request in server
+    11. To enable static files from server use app.use(path,express.static(file-location))
+    
+            Mongoose
+        ----------------
+
+    1. Mongoose is an ODM (Object Data Modeling) library for MongoDB and Node.js.
+    2. It helps you:
+        ✔ Connect to MongoDB
+        ✔ Define schemas
+        ✔ Validate data
+        ✔ Perform CRUD operations easily
+    3. Install Mongoose : npm install mongoose
+    4. Connect MongoDB with express js server using mongoose : use 'connect' method 
+        - mongoose.connect(db connection string)
+    5. Schema in Mongoose : Schema defines the structure of documents in a MongoDB collection.
+        - It tells MongoDB:
+            - What fields a document will have
+            - What data type each field is
+            - Whether a field is required or optional
+            - Validation rules (min/max length, enum, default value, etc.)
+        - To create schemas use mongoose Schema class object
+        - Supported Data Types in Schema : String, Number, Boolean, Date, Array, Object, Buffer, Mixed, ObjectId
+        - Convert Schema to Model : 
+    6. Model is a constructor function created from a Schema.
+            ➡️ Schema = structure/blueprint
+            ➡️ Model = object that interacts with the database
+        - Convert Schema to Model : using 'model' method of mongoose
+            mongoose.model("model-name/collection-name",schema-name)
+        - Using a Model, you can:
+            ✔ Create new documents : creating object for model, save the object using 'save' method of mongoose
+            ✔ Insert data into MongoDB : creating object for model, save the object using 'save' method of mongoose
+            ✔ Query data : model-name.find(), findOne(), findById()
+            ✔ Update data : model-name.updateOne(), findByIdAndUpdate()
+            ✔ Delete data : findByIdAndDelete()
+
+
+            JSON Web Token (JWT)
+        -------------------------------
+    1. JSON Web Token (JWT) is a compact, secure, and URL-safe way to represent claims between a client and a server.
+    2. JWTs are widely used for 'authentication and authorization' in modern web applications, especially in REST APIs.
+    3. Why JWT?
+        - JWT allows the server to verify a user's identity without storing their session on the server.
+        - This makes it perfect for:
+            - Stateless authentication
+            - Microservices
+            - Single Page Applications (React, Angular, Vue)
+            - Mobile applications
+    4. Structure of a JWT
+        - A JWT consists of three parts, separated by dots: Header.Payload.Signature
+            - Header : Specifies signing algorithm (HS256, RS512)
+            - Payload : Contains user data (userId, role, email)
+            - Signature : Ensures token is not tampered
+    5. How JWT Works (Flow)
+        - User logs in with email/password.
+        - Server validates credentials.
+        - Server generates JWT and sends it to the client.
+        - Client stores the token (usually in localStorage or cookies).
+        - Client sends token in headers for protected routes: "Authorization": `Bearer <token>`
+        - Server verifies token and grants/denies access.
+    6. Install JWT package: npm install jsonwebtoken
+    7. Create Token: use 'sign' method jsonwebtoken : jsonwebtoken.sign(payload,secret-key)
+    8. Verify token : use 'verify' method: jsonwebtoken.verify(token,secret-key)
+
+        
+            MIDDLEWARES
+        -----------------------
+
+    1. Middlewares : are functions that run between the request and the response in a server application—commonly used in Express.js.
+    2. What is Middleware? A middleware is a function that has access to:
+        - req → Request object
+        - res → Response object
+        - next → 
+        It can:
+            - Modify req or res
+            - Run some logic (logging, validation, authentication)
+            - Stop the request OR pass it forward using next()
+    3. Types of Middleware
+        - Application-level middleware : Runs for every request, server-app.use(...)
+        - Router-level middleware : Attached to routes or route groups
+        - Built-in Middleware : express.json()
+        - Third-party Middleware : cors
+        - Error-handling Middleware: Has 4 parameters: (err, req, res, next)
+    4. Why Middleware is Important? Logging , Authentication,Error handling, Data parsing, Request validation, Access control, Performance monitoring
+
+            MULTER
+        --------------
+
+    1. Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. 
+    2. Install multer : npm install multer
+    3. Multer adds a 'body' object and a 'file' or 'files' object to the request object.
+    4. The 'body' object contains the values of the 'text fields' of the form, the 'file' or 'files' object contains the 'files uploaded' via the form.
+    5. Multer can be used to processing (where to store , checking its format etc) media file, 
+
+            TypeScript
+        ------------------
+
+    1. TypeScript (TS) is a superset of JavaScript developed by Microsoft.
+    2. It adds static typing to JavaScript and then compiles to plain JavaScript.
+        ex: let message: string = "Hello TypeScript";
+        let skills: string[] = ["HTML", "CSS", "Angular"];
+    3. Classes & Access Modifiers
+
+
+            ANGULAR
+        --------------
+
+    1. Angular is a TypeScript-based frontend framework, developed by Google for building single-page applications (SPAs).
+    2. Single-page applications (SPAs) : web application that loads a single HTML page once and then updates the content dynamically as the user interacts with the app—without reloading the entire page.
+    3. Key Features
+        - Component-based architecture, (minimum it has 4 files - html,css,ts,spec.ts)
+        - Two-way data binding
+        - Dependency Injection
+        - Routing:
+        - Forms (Template & Reactive)
+        - RxJS & Observables
+    4. Install Angular CLI : npm install -g @angular/cli
+    5. To check Version : ng version
+    6. Create Angular Project : ng new my-angular-app
+    7. To run angular app : ng serve / npm start , open browser http://localhost:4200
+    8. Angular Project Structure
+        - angular.json : main configuration file for an Angular project.
+        - src folder : core of project 
+            src/
+            ├── app/
+            │   ├── app.ts : Component logic
+            │   ├── app.html : Template
+            │   ├── app.css : style
+            │   ├── app.spec.ts : testing component
+            │   ├── app.config.ts : used in Standalone Components, Routing, HTTP,Dependency Injection       providers, Animations, Zone / hydration / SSR
+            │   ├── app.routes.ts : client-side navigation (routing)
+            ├── main.ts : App bootstrap
+            ├── index.html : entry point
+            ├── style.css : Global css
+    9. Components :  main building blocks of Angular applications. Each component represents a part of a larger web page.TypeScript class with a template and styles that defines how a view looks and behaves.
+        - Creating a Component : ng g c component-name
+    10. Data Binding : used to share data between component (ts file) with view (html file)
+        - Types of Data Binding in Angular
+            1. Interpolation : data shared from ts file to html page, component can share class property to html page , in html {{class-property}}
+            2. Property Binding : data shared from ts file to html page, binding between html attribute with class property, in  html,     [attribute-name]="class-property"
+            3. Event Binding : used to bind events in html to ts function,
+            (event-name)="function-call"
+                - using $event : using to get event in ts file
+                - using template refernce variable (#variable-name in html tag): to get tag information in ts
+            4. Two way binding : used to share data between view & component at the same time. It uses 'ngModel' directive , it used in input tag, ngModel should import from 'FormsModule'
+                - syntax : [(ngModel)]="class-property"
+    11. Directives : used to manipulate the DOM by changing the appearance, behavior, or structure of elements.
+        - 3 types of directives:
+            1. Structural Directives: change the DOM structure (add/remove elements).
+                - They start with *
+                - *ngIf , *ngFor, *ngSwitch
+            2. Attribute Directives : change appearance or behavior of an element.
+                - ngClass, ngStyle, ngModel
+    12. Control Flow Statement : startsWith @ symbol, used in html page
+        - @if, @else, @for, @switch
+        - @if (condition){
+            html code
+        }
+    13. Component Path setup
+        - define path object in Routes array of app.routes.ts file
+        - path object can  { path:'path',component:component-class-name }
+        - inside app.html add router-outlet selector
+        - To redirect from one page to another using component : navigateByUrl('path') from Router class
+        - use 'routerLink' attribute to redirect from html without refreshing the page
+    14. Dependency Injection : Using dependent class properties or method without inheritting
+        - using constructor method : constructor(access specifier class-varibele:dependent class-name){}
+            - access specifier : private / public / protected
+        - using Inject(dependent class name) method
+    15. Services : Used to share common logic between components
+        - create service : ng g s service-folder/service-name
+    16. Observable : used to Handling Asynchronous function in ts
+        - To resolve Observable use subscribe method
+            - argument of subscribe method 
+                -  callback function , its argument will give you response
+                - OBserver Object , next key gives to success response, error key gives client / server error response
+    17. API call in angular : HTTPClient class
+        - SET UP 
+            1. Provide HttpClient to app.config
+            2. inject HttpClient to service
+            3. make api call using HttpClient methods like get,post,put,delete etc.
+    18. Angular Component Lifecycle Methods
+            Constructor : Called when component is created, Used for dependency injection
+            ↓
+            ngOnChanges : Runs when @Input() (used to parent data to child) values change
+            ↓
+            ngOnInit : Best place for API calls & initialization
+            ↓
+            ngDoCheck : Runs on every change detection
+            ↓
+            ngAfterContentInit : Runs once after <ng-content> is initialized
+            ↓
+            ngAfterContentChecked : Runs after every check of projected content
+            ↓
+            ngAfterViewInit : Runs once after component view & child views initialized
+            ↓
+            ngAfterViewChecked : Runs after every view check
+            ↓
+            ngOnDestroy : Runs before component is destroyed
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
