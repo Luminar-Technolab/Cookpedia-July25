@@ -29,15 +29,16 @@
     <!-- all recipes -->
      <div class="row my-3">
         <!-- duplicate col according recipe array -->
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top" src="https://www.pngall.com/wp-content/uploads/2/Healthy-Meal.png" alt="recipe">
-                <div class="card-body">
-                    <h5 class="card-title">name</h5>
+         @for (recipe of allRecipes(); track $index) {
+            <div class="col-lg-4">
+                <div class="p-3">
+                    <img class="card-img-top" [src]="recipe.image" alt="recipe">
+                    <div class="card-body">
+                        <h5 class="card-title">{{recipe.name}}</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        
+         }
      </div>
   </div>
   <!-- banner -->
