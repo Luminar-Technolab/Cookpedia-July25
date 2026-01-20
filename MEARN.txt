@@ -1055,6 +1055,12 @@
             ngAfterViewChecked : Runs after every view check
             ↓
             ngOnDestroy : Runs before component is destroyed
+    19. Angular Pipes : used to transform data in templates without changing the original value. They are mainly used for formatting and displaying data.
+        - A pipe takes input data → transforms it → returns formatted output.
+        {{ value | pipeName }}
+        - Built-in Pipes in Angular : 
+        - Custom pipes : ng g p pipes-folder/pipe-name
+
 
 
     
