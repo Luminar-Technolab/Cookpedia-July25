@@ -1060,7 +1060,13 @@
         {{ value | pipeName }}
         - Built-in Pipes in Angular : 
         - Custom pipes : ng g p pipes-folder/pipe-name
-
+    20. Reactive Forms : 
+        - Are example of Model driven forms 
+        - Here first we have to create a model in ts file corresponding form, to create model use formBuilder class
+        - Reactive form consists of
+            - FromGroup : 
+            - FormArray : 
+            - FromControl : 
 
 
     

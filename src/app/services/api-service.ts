@@ -15,4 +15,9 @@ export class ApiService {
     return this.http.get(`${this.server_url}/recipes`)
   }
 
+  //register : called by register compoennet
+  registerAPI(user:any){
+    return this.http.post(`${this.server_url}/register`,user)
+  }
+
 }
