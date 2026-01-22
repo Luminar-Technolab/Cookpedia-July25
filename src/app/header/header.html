@@ -38,16 +38,25 @@
       <!-- dropdown -->
       <div class="ms-auto dropdown">
         <button
-          class="btn text-light dropdown-toggle"
+          class="btn text-light dropdown-toggle d-flex align-items-center"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-user "></i>
+          @if (loginUsername) {
+            <span class="mx-1 fw-bolder">Hi {{loginUsername}},</span>
+          }
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" routerLink="/login">Login</a></li>
-          <li><a class="dropdown-item" routerLink="/register">Register </a></li>
+          @if (isLoggedin) {
+            <li><a class="dropdown-item" routerLink="/user/profile">Profile</a></li>
+            <li><a class="dropdown-item" routerLink="/user/collection">Recipe Collection </a></li>
+            <li><button (click)="logout()" class="btn">Logout</button></li>
+          }@else {
+            <li><a class="dropdown-item" routerLink="/login">Login</a></li>
+            <li><a class="dropdown-item" routerLink="/register">Register </a></li>
+          }
         </ul>
       </div>
     </div>

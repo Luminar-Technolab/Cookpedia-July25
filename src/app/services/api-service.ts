@@ -20,4 +20,8 @@ export class ApiService {
     return this.http.post(`${this.server_url}/register`,user)
   }
 
+  //login : called by login compoennet
+  loginAPI(user:any){
+    return this.http.post(`${this.server_url}/login`,user)
+  }
 }
