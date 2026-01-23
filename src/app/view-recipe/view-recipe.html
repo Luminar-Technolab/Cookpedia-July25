@@ -1,1 +1,68 @@
-<p>view-recipe works!</p>
+<app-header></app-header>
+<div class="container my-5">
+    <div class="row ">
+        <div class="col-lg-6 ">
+            <a routerLink="/recipes">Back to Recipe List</a>
+            <br>
+            <img class="w-100 my-5" [src]="recipe().image" alt="recipe">
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-success">Download Recipe</button>
+                <button class="btn btn-primary">Save Recipe</button>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h1 >{{recipe().name}} </h1>
+            <div class="row my-5">
+                <div class="col-lg-4">
+                    <h6 >Cuisine : <span class="text-danger"> {{recipe().cuisine}} </span></h6>
+                </div>
+                <div class="col-lg-4">
+                    <h6 >Servings  : <span class="text-success"> {{recipe().servings}} </span></h6>
+                </div>
+                <div class="col-lg-4">
+                    <h6 >Mode of Cooking   : <span class="text-primary"> {{recipe().difficulty}} </span></h6>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column text-center" >
+                        <div><img width="80px" src="https://tse2.mm.bing.net/th?id=OIP.xy52jM0FuazKAQTfeyvo_gHaHa&pid=Api&P=0&h=180" alt="logo"></div>
+                       <h6> Preparation Time   </h6> 
+                       <span class="text-primary"> {{recipe().prepTimeMinutes}} Minutes </span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column text-center" >
+                        <div><img width="100px" src="https://png.pngtree.com/png-clipart/20230323/original/pngtree-cooking-logo-png-image_9001296.png" alt="logo"></div>
+                       <h6> Cooking Time    </h6> 
+                       <span class="text-primary"> {{recipe().cookTimeMinutes}} Minutes </span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column text-center" >
+                        <div><img width="100px" src="https://cdn1.iconfinder.com/data/icons/fitness-sport/512/calories-512.png" alt="logo"></div>
+                       <h6> Calorie Per Servings   </h6> 
+                       <span class="text-primary"> {{recipe().caloriesPerServing}}  </span>
+                    </div>
+                </div>
+            </div>
+            <h2>Ingredients Needed</h2>
+            <ol>
+                @for (item of recipe().ingredients; track $index) {
+                    <li> {{item}} </li>
+                }
+            </ol>
+            <h2>Cooking Instructions</h2>
+            <ol>
+                @for (item of recipe().instructions; track $index) {
+                    <li> {{item}} </li>
+                }
+            </ol>
+        </div>
+    </div>
+    <div class="mb-5">
+        <h1>Related Recipes</h1>
+        <div class="row my-3">
+            
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

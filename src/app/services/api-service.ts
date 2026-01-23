@@ -24,4 +24,14 @@ export class ApiService {
   loginAPI(user:any){
     return this.http.post(`${this.server_url}/login`,user)
   }
+
+  //view Recipe : view COmpoenet when page open
+  viewRecipeAPI(recipeId:string){
+    return this.http.get(`${this.server_url}/recipes/${recipeId}`)
+  }
+  //related-recipes?cuisine=Italian
+  getRelatedRecipesAPI(cuisine:string){
+     return this.http.get(`${this.server_url}/related-recipes?cuisine=${cuisine}`)
+  }
+
 }

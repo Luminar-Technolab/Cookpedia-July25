@@ -1021,6 +1021,7 @@
         - inside app.html add router-outlet selector
         - To redirect from one page to another using component : navigateByUrl('path') from Router class
         - use 'routerLink' attribute to redirect from html without refreshing the page
+        - Activated route class : To get dynamic values from a url in component
     14. Dependency Injection : Using dependent class properties or method without inheritting
         - using constructor method : constructor(access specifier class-varibele:dependent class-name){}
             - access specifier : private / public / protected

@@ -8,7 +8,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule,Header,Footer],
+  imports: [ReactiveFormsModule,Footer],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
