@@ -47,4 +47,24 @@ export class ApiService {
   addToDownloadAPI(recipeId:string,reqBody:any){
     return this.http.post(`${this.server_url}/downloads/${recipeId}`,reqBody,this.appendToken())
   }
+  //http://localhost:3000/recipes/696dca88b9d0995b3d822937/save : post - called view recipe complnenr when save recipe btn clicked
+  addToSaveRecipeAPI(recipeId:string,reqBody:any){
+    return this.http.post(`${this.server_url}/recipes/${recipeId}/save`,reqBody,this.appendToken())
+  }
+
+  //http://localhost:3000/recipe-collection get rqst from user collection compoenent when page load
+  getUserSaveRecipesAPI(){
+     return this.http.get(`${this.server_url}/recipe-collection`,this.appendToken())
+  }
+
+  //http://localhost:3000/recipe-collection/69785458cae7be8b48c626ce - delete from save recipe component when delete btn clicked
+  removeUserSaveRecipeItemAPI(recipeId:string){
+     return this.http.delete(`${this.server_url}/recipe-collection/${recipeId}`,this.appendToken())
+  }
+
+  //http://localhost:3000/feedback : post by contact component when submit btn clicked
+  addFeedbackAPI(reqBody:any){
+    return this.http.post(`${this.server_url}/feedback`,reqBody)
+  }
+
 }
