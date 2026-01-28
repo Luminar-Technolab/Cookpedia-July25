@@ -67,4 +67,9 @@ export class ApiService {
     return this.http.post(`${this.server_url}/feedback`,reqBody)
   }
 
+  //http://localhost:3000/user-downloads : get by user profile component when page loads
+  getUserDownloadListAPI(){
+     return this.http.get(`${this.server_url}/user-downloads`,this.appendToken())
+  }
+
 }
