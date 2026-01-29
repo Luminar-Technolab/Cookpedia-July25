@@ -72,4 +72,13 @@ export class ApiService {
      return this.http.get(`${this.server_url}/user-downloads`,this.appendToken())
   }
 
+  //http://localhost:3000/user-edit : put by profile when pic uplodas
+  editUserPictureAPI(reqBody:any){
+     return this.http.put(`${this.server_url}/user-edit`,reqBody,this.appendToken())
+  }
+  ///feedbacks-approve : get by home page when it loads
+  getApproveFeedbacksAPI(){
+     return this.http.get(`${this.server_url}/feedbacks-approve`)
+  }
+  
 }

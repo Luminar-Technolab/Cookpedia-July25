@@ -22,7 +22,7 @@ export class UserCollection {
   getUserCollection(){
     this.api.getUserSaveRecipesAPI().subscribe((res:any)=>{
       this.allRecipes.set(res)
-      // console.log(this.allRecipes());
+      console.log(this.allRecipes());
     })
   }
 

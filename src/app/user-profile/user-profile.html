@@ -3,9 +3,9 @@
     <div style="height: 200px;" class="row bg-success"></div>
     <div style="width: 220px; height: 220px;border-radius: 50%; margin-top: -110px;" class="p-1 shadow d-flex justify-content-center align-items-center ">
         <label for="upload">
-            <img width="200px" height="200px" style="border-radius: 50%; " [src]="userImage" alt="profile">
+            <img width="200px" height="200px" style="border-radius: 50%; " [src]="userImage()" alt="profile">
         </label>
-        <input type="file" id="upload" hidden>
+        <input (change)="updateProfilePic($event)" type="file" id="upload" accept="image/*" hidden>
     </div>
     <label style="margin-top: -40px;margin-left: 100px;" for="upload" class="btn bg-light"><i class="fa-solid fa-upload fa-2x text-success "></i></label>
 
@@ -19,7 +19,8 @@
     <div class="my-5">
         <h3>Download Recipes History</h3>
         <div class="row">
-            @for (recipe of downloadList(); track $index) {
+            @if (downloadList().length>0) {
+                @for (recipe of downloadList(); track $index) {
                 <div class="col-lg-2">
                     <div routerLink="/recipes/{{recipe.recipeId}}/view" class="p-3">
                         <img class="card-img-top" [src]="recipe.image" alt="recipe">
@@ -28,7 +29,11 @@
                         </div>
                     </div>
                 </div>
+                }
+            }@else {
+                <p class="fw-bolder text-primary">Recipes not Downloaded yet!!</p>
             }
+            
         </div>
     </div>
 </div>
