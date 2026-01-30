@@ -11,6 +11,10 @@ import { ViewRecipe } from './view-recipe/view-recipe';
 import { Pnf } from './pnf/pnf';
 
 export const routes: Routes = [
+    //lazy load module :  http://localhost:4200/admin
+    {
+        path:'admin', loadChildren:()=>import('./admin/admin-module').then(module=>module.AdminModule)
+    },
     // home : http://localhost:4200/
     {
         path:'', component:Home,title:"Home"

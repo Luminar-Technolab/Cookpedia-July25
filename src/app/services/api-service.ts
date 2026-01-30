@@ -80,5 +80,13 @@ export class ApiService {
   getApproveFeedbacksAPI(){
      return this.http.get(`${this.server_url}/feedbacks-approve`)
   }
+  //http://localhost:3000/user-list get by admin users when [age loads]
+  getUserListAPI(){
+     return this.http.get(`${this.server_url}/user-list`,this.appendToken())
+  }
+  //downloads
+  getDownloadListAPI(){
+     return this.http.get(`${this.server_url}/downloads`,this.appendToken())
+  }
   
 }

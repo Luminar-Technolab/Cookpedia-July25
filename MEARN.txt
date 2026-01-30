@@ -1068,7 +1068,14 @@
             - FromGroup : 
             - FormArray : 
             - FromControl : 
-
+    21. Modules : are used to group components, they are not stand alone component but part of module. We can lazy load the module into app
+        - Lazy loading in Angular : loading the content of a web page whenever it requires, It used to reduce initial website loading time
+        - Generate modules with routing features : ng g m module-name --routing 
+            - routing-module.ts file : used to set up path for components inside module
+            - module.ts file: provide common libraries to components in module
+        - Generate Component inisde a module : ng g c module-name/component-name --no-standalone
+        - To Lazy load a module in angular : define lazy loads steps in app.routes.ts files, use following steps
+            - set up lazy loaded path for entire module
 
     
 
