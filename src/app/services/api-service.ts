@@ -88,5 +88,13 @@ export class ApiService {
   getDownloadListAPI(){
      return this.http.get(`${this.server_url}/downloads`,this.appendToken())
   }
-  
+  //http://localhost:3000/feedbacks get by admin feedback when page loads
+  getFeedbackListAPI(){
+     return this.http.get(`${this.server_url}/feedbacks`,this.appendToken())
+  }
+  //http://localhost:3000/feedbacks/697866d79dc39140307a5d8b : put by feedback when approve / reject btn clicked
+  updateFeedbackStatusAPI(id:string,reqBody:any){
+     return this.http.put(`${this.server_url}/feedbacks/${id}`,reqBody,this.appendToken())
+  }
+
 }

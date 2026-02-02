@@ -1,10 +1,29 @@
 <div class="container-fluid">
    <div class="row">
-    <div class="col-lg-2">
+    @if (isSidebarOpen) {
+        <div class="col-lg-2">
         <app-admin-sidebar></app-admin-sidebar>
     </div>
+    }
     <div class="col">
-            admin-dashboard works!
+           <!-- header -->
+            <div class="row">
+                <div class="p-3 bg-success w-100 d-flex align-items-center justify-content-between">
+                    <div class="fs-3 text-light">
+                        <button (click)="toggleSidebar()" class="btn text-light"><i class="fa-solid fa-bars fa-2x"></i></button>
+                        ADMIN
+                    </div>
+                    <!-- logou dropdown -->
+                     <div class="dropdown">
+                        <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user  text-light"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button (click)="logout()" class="dropdown-item" >Logout <i class="fa-solid fa-arrow-right-from-bracket"></i> </button></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
     </div>
    </div> 
 </div>

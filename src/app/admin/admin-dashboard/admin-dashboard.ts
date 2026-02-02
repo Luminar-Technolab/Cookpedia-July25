@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -8,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AdminDashboard {
 
+  isSidebarOpen:boolean = true
+  router = inject(Router)
+
+  toggleSidebar(){
+    this.isSidebarOpen = !this.isSidebarOpen
+  }
+  logout(){
+    sessionStorage.clear()
+    this.router.navigateByUrl('/login')
+  }
 }
