@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { RecipeModel } from '../admin/model/recipeModel';
 
 @Injectable({
   providedIn: 'root',
@@ -95,6 +96,11 @@ export class ApiService {
   //http://localhost:3000/feedbacks/697866d79dc39140307a5d8b : put by feedback when approve / reject btn clicked
   updateFeedbackStatusAPI(id:string,reqBody:any){
      return this.http.put(`${this.server_url}/feedbacks/${id}`,reqBody,this.appendToken())
+  }
+
+  //http://localhost:3000/recipes : post rqst by manage recipe compoenent when add btn clicked
+  addRecipeAPI(reqBody:RecipeModel){
+     return this.http.post(`${this.server_url}/recipes`,reqBody,this.appendToken())
   }
 
 }
