@@ -16,16 +16,16 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.name" placeholder="Recipe Name" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().name" placeholder="Recipe Name" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.prepTimeMinutes" placeholder="Recipe Preparation Time in Minutes" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().prepTimeMinutes" placeholder="Recipe Preparation Time in Minutes" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.image" placeholder="Recipe Image URL" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().image" placeholder="Recipe Image URL" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.cuisine" placeholder="Cuisine Type (ex: Asian, Italian, Indian etc.)" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().cuisine" placeholder="Cuisine Type (ex: Asian, Italian, Indian etc.)" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
                             <div class="d-flex align-items-center mb-2">
@@ -44,16 +44,16 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.servings" placeholder="Recipe Servings (ex: 4)" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().servings" placeholder="Recipe Servings (ex: 4)" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.cookTimeMinutes" placeholder="Recipe Cook Time in Minutes" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().cookTimeMinutes" placeholder="Recipe Cook Time in Minutes" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <input [(ngModel)]="recipeDetails.caloriesPerServing" placeholder="Recipe Calories per Servings (ex: 350)" type="text" class="form-control">
+                            <input [(ngModel)]="recipeDetails().caloriesPerServing" placeholder="Recipe Calories per Servings (ex: 350)" type="text" class="form-control">
                         </div>
                         <div class="mb-2">
-                            <select [(ngModel)]="recipeDetails.difficulty" name="mode" id="mode" class="form-control">
+                            <select [(ngModel)]="recipeDetails().difficulty" name="mode" id="mode" class="form-control">
                                 <option hidden disabled selected>Choose Mode of Cooking</option>
                                 <option value="Easy">Easy</option>
                                 <option value="Medium">Medium</option>
@@ -93,9 +93,9 @@
                      </div>
                 </div>
                 @if (recipeId) {
-                    <button class="btn btn-warning text-light">Update Recipe</button>
+                    <button (click)="editRecipe()" class="btn btn-warning text-light">Update Recipe</button>
                 }@else {
-                    <button class="btn btn-primary">Add Recipe</button>
+                    <button (click)="addRecipe()" class="btn btn-primary">Add Recipe</button>
                 }
             </div>
     </div>

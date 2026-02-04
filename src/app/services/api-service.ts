@@ -103,4 +103,14 @@ export class ApiService {
      return this.http.post(`${this.server_url}/recipes`,reqBody,this.appendToken())
   }
 
+  //http://localhost:3000/recipes/69818ec6bfe9b48e046ed70e : delete by recipes when delete btn clicked
+  removeRecipeAPI(id:string){
+    return this.http.delete(`${this.server_url}/recipes/${id}`,this.appendToken())
+  }
+
+  //http://localhost:3000/recipes/6982e3a0eb593620e4b5a6bb : put reqst by manage recipe compoenent when update btn clicked
+  editRecipeAPI(id:string,reqBody:RecipeModel){
+     return this.http.put(`${this.server_url}/recipes/${id}`,reqBody,this.appendToken())
+  }
+  
 }
