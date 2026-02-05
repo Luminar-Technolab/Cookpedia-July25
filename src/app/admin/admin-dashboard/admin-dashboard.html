@@ -25,6 +25,7 @@
                 </div>
 
             </div>
+            <!-- blocks -->
             <div class="row my-5">
                 <!-- box -->
                 <div class="col-lg-3">
@@ -64,6 +65,23 @@
                             <h4>Notification</h4>
                             <h6>You have <a routerLink="/admin/feedbacks">{{notificationCount()}}</a> new feedbacks!!</h6>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <!-- chart -->
+                    <highcharts-chart
+                    [options]="chartOptions"
+                    class="chart"
+                    />
+                </div>
+                <div class="col-lg-5">
+                    <!-- calendar -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <mat-card class="demo-inline-calendar-card">
+                        <mat-calendar [(selected)]="selected"></mat-calendar>
+                        </mat-card>
                     </div>
                 </div>
             </div>

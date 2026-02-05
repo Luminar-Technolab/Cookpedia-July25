@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../../services/api-service';
+import * as Highcharts from 'highcharts'
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -10,6 +11,7 @@ import { ApiService } from '../../services/api-service';
 })
 export class AdminDashboard {
 
+  selected = new Date()
   api = inject(ApiService)
   isSidebarOpen:boolean = true
   router = inject(Router)
@@ -17,6 +19,44 @@ export class AdminDashboard {
   recipeCount = signal<number>(0)
   downloadCount = signal<number>(0)
   notificationCount = signal<number>(0)
+  chartOptions: Highcharts.Options = {}; // Required
+
+  constructor(){
+    if(localStorage.getItem("chart")){
+      const data = JSON.parse(localStorage.getItem("chart")||"")
+      this.chartOptions = {
+      chart:{
+        type:'bar'
+      },
+      title:{
+        text:'Analysis of Download Recipe Based on Its Cuisine'
+      },
+      xAxis:{
+        type:'category'
+      },
+      yAxis:{
+        title:{
+          text:'Total Download Recipe Count'
+        }
+      },
+      legend:{
+        enabled:false
+      },
+      credits:{
+        enabled:false
+      },
+      series:[
+        {
+          name:'Download Count',
+          colorByPoint:true,
+          type:'bar',
+          data
+        }
+      ]
+      }
+    }
+    
+  }
 
   ngOnInit(){
     this.getUserCount()

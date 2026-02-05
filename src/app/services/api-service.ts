@@ -112,5 +112,26 @@ export class ApiService {
   editRecipeAPI(id:string,reqBody:RecipeModel){
      return this.http.put(`${this.server_url}/recipes/${id}`,reqBody,this.appendToken())
   }
+
+  getChartData(){
+    this.getDownloadListAPI().subscribe((res:any)=>{
+      let downloadlistArray:any = []
+      let output:any = {}
+      res.forEach((item:any)=>{
+        let cuisine = item.cuisine
+        let currentCount = item.count
+        if(cuisine in output){
+          output[cuisine] += currentCount
+        }else{
+          output[cuisine] = currentCount
+        }
+      })
+      console.log(output);
+      for(let cuisine in output){
+        downloadlistArray.push({name:cuisine,y:output[cuisine]})
+      }
+      localStorage.setItem("chart",JSON.stringify(downloadlistArray))
+    })
+  }
   
 }
