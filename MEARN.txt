@@ -1076,6 +1076,14 @@
         - Generate Component inisde a module : ng g c module-name/component-name --no-standalone
         - To Lazy load a module in angular : define lazy loads steps in app.routes.ts files, use following steps
             - set up lazy loaded path for entire module
+    22. Route Guarding : used to control access to routes
+        - Angular provides 5 types of guards
+            - CanActivate : Allow / block route access
+            - CanActivateChild : Protect child routes
+            - CanDeactivate : Prevent leaving a route
+            - Resolve : Fetch data before loading route
+            - CanLoad : Prevent lazy-loaded modules
+        - Create Guard in Angular : ng g g guard-folder/guard-name
 
     
 
